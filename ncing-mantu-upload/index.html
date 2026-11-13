@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ncing Mantu</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="wrap">
+
+<header class="navbar"><div class="navbar-in">
+  <img class="nav-logo" src="assets/nav_logo.png" alt="Ncing Mantu">
+  <nav>
+    <a href="#beranda" class="nav-link" data-s="beranda">BERANDA</a><span>|</span>
+    <a href="#produk" class="nav-link" data-s="produk">PRODUK</a><span>|</span>
+    <a href="#kontak" class="nav-link" data-s="kontak">KONTAK</a>
+  </nav>
+</div></header>
+
+<section id="beranda" class="hero">
+  <img class="hero-logo" src="assets/hero_logo.png" alt="Ncing Mantu">
+  <p class="tagline script">Segar Kulineran,<br>Bersih Berkelanjutan.</p>
+  <p class="lead">Pelopor <b>Asinan Kuah Lemon</b> dan <b>asinan Kiamboy</b> premium dengan konsep zero-waste. Kami mengolah kesegaran buahnya untuk camilanmu, dan mengekstrak kulit nanasnya menjadi sabun cuci piring alami yang ramah lingkungan!</p>
+</section>
+
+<div class="banner">BELI SEGARNYA, BAWA BERSIHNYA!</div>
+
+<section class="profile">
+  <span class="pill">PROFIL UMKM</span>
+  <p>Nama "Ncing Mantu" diambil dari nama panggilan sayang untuk <b>Ibu kami</b> di tengah-tengah keluarga besar Bapak. Sebuah nama yang membawa <b>kehangatan kekeluargaan, ketulusan, dan resep warisan yang penuh kasih</b>. Dari kehangatan dapur keluarga inilah, kami membawa semangat yang sama untuk menyajikan produk terbaik bagi Anda dan bumi.</p>
+
+  <span class="pill">TENTANG KAMI</span>
+  <p>Berawal dari sebuah dapur rumahan pada September 2025, Ncing Mantu lahir sebagai usaha mikro (UMKM) kreatif yang mengusung konsep <b>zero-waste</b>. Kami bangga menjadi pelopor yang menggabungkan kesegaran kuliner Asinan Kuah Lemon Kiamboy premium dengan produk kebersihan ramah lingkungan, Sabun Cuci Piring Alami dari Kulit Nanas.</p>
+
+  <p>Dalam satu tahun perjalanan ini, Ncing Mantu berkomitmen untuk tidak sekadar berbisnis, tetapi juga bertanggung jawab pada lingkungan. Kami melihat bahwa produksi asinan menyisakan kulit nanas yang melimpah. Terinspirasi dari kearifan rumah tangga yang bijak, kami memilih untuk tidak membuangnya. Daging buah nanas yang manis dan segar kami olah dengan racikan kuah lemon kiamboy yang segar menyehatkan. Sementara itu, kulit nanasnya kami proses kembali melalui fermentasi alami menjadi sabun cuci piring kaya enzim.</p>
+
+  <p>Kombinasi antara kuliner segar dan produk eco-friendly membuat bisnis kami memiliki daya saing yang sangat tinggi dan sulit ditiru kompetitor:</p>
+  <ol class="points">
+    <li>Pelopor Zero-Waste Business Model (Bisnis Tanpa Limbah)</li>
+    <li>Produk Kuliner Premium &amp; Unik (Differentiated Taste)</li>
+    <li>Sabun Organik Kaya Enzim (Eco-Friendly &amp; Safe)</li>
+    <li>Narasi Brand yang Humanis (Authentic Storytelling)</li>
+  </ol>
+  <p class="script-caption script">Kisah Perjalanan 1 Tahun Kami ⌄</p>
+</section>
+
+<section class="cta" style="background-image:url(assets/1bb7435a-6606-4c07-a241-f706bdd3f633.jpg)">
+  <button class="cta-btn" onclick="document.getElementById('produk').scrollIntoView()">AYO CEK PRODUK KITA</button>
+  <img class="mascot-shy" src="assets/mascot_shy.png" alt="">
+</section>
+
+<section id="produk" class="produk">
+  <h2 class="script" style="font-size:24px">⌄ Produk Kami ⌄</h2>
+  <div class="carousel" id="carousel"></div>
+
+  <div class="product-detail" id="pd-wrap">
+    <div class="txt" id="pd-txt"></div>
+    <img class="mascot-ok" src="assets/mascot_ok.png" alt="">
+  </div>
+  <div class="add-cart-wrap"><button class="add-cart-btn" id="addCartBtn">+ TAMBAH KE KERANJANG</button></div>
+
+  <div class="cart-box">
+    <h4>🧺 Keranjang</h4>
+    <ul id="cartList"></ul>
+    <div id="cartEmpty" class="cart-empty">Keranjang masih kosong</div>
+    <div class="cart-total">TOTAL <span id="cartTotal">Rp 0</span></div>
+    <div class="cart-actions">
+      <button id="checkoutBtn">LANJUT CHECKOUT</button>
+      <a href="#kontak" class="info-link">👤 KONTAK KAMI</a>
+    </div>
+  </div>
+</section>
+
+<section id="qris" class="qris">
+  <h3>PEMBAYARAN BISA MELALUI QRIS</h3>
+  <div class="qr-frame"><i></i><i></i><i></i><i></i><span id="qrNote">Total akan tampil di sini setelah checkout</span></div>
+</section>
+<img class="mascot-lg" src="assets/qris.jpg" alt="">
+<section id="kontak" class="kontak">
+  <img class="mascot-lg" src="assets/mascot_shy.png" alt="">
+  <h3>PENASARAN DENGAN KAMI?<br>HUBUNGI KONTAK DIBAWAH INI</h3>
+  <div class="contact-pill">📞 082X - 12XX - X032</div>
+  <p class="addr">🏠 diwarung kita rt 0x rw x3</p>
+  <p class="ig">@NCANG_MANTU</p>
+  <p class="script-caption script">Terima Kasih Sudah Berkunjung :)</p>
+</section>
+<div class="foot-photo" style="background-image:url(assets/food_bg_footer.jpg)"></div>
+
+<footer class="credit">© 2026 Ncing Mantu — dibuat dengan 🧡</footer>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
